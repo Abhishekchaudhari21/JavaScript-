@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/output.css" rel="stylesheet">
+        <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+        <title>Document</title>
+    </head>
+    <body class="bg-gray-900 p-4 align-middle justify-center">
+        <section>
+            <div class="container m-4 bg-gray-200 rounded-lg p-4 w-lg justify-self-center align-middle">
+                <div>
+                    <h1 class = "text-4xl font-bold text-center ">To Do List</h1>
+                </div>
+                <div class="input-conatainer flex justify-between items-center m-4 ">
+                    <div class = "input-group border-black text-black ">
+                        <input type="text" id="todo-input" placeholder="Add a new task... " class = "p-2 rounded border-black px-6  w-full ml-6">
+                    </div>
+                    <div>                   
+                        <button id="add-task-btn" class = "bg-blue-500 rounded-lg p-1.5">Add task</button>
+                    </div>
+                </div>
+                <ul id="todo-list" class="list-disc px-4"></ul> 
+            </div>
+        </section>
+        <script src="/to-do-list/script.js"></script>
+    </body>
+</html>
